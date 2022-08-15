@@ -1,0 +1,39 @@
+{
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "Run Test (Mocked)",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"program": "${workspaceFolder}/node_modules/jest/bin/jest.js",
+			"args": [
+				"--runInBand",
+				"${fileBasename}"
+			],
+			"console": "integratedTerminal"
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "Run Test (Integrated)",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"program": "${workspaceFolder}/node_modules/jest/bin/jest.js",
+			"args": [
+				"--runInBand",
+				"${fileBasename}"
+			],
+			"console": "integratedTerminal",
+			"env": {
+				"INTEGRATED_SERVER": "http://192.168.10.15:8787"
+			}
+		}
+	]
+}
