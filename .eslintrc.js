@@ -28,7 +28,10 @@ module.exports = {
 			'tab',
 		],
 		'linebreak-style': 'off',
+		'no-shadow': 'off',
 		'no-tabs': 'off',
+		'no-undef': 'off',
+		'no-unused-vars': 'off',
 	},
 	settings: {
 		'import/resolver': {
