@@ -28,6 +28,11 @@ module.exports = {
 			'tab',
 		],
 		'linebreak-style': 'off',
+		'no-restricted-syntax': [
+			'error',
+			'WithStatement',
+		],
+		'no-return-await': 'off',
 		'no-shadow': 'off',
 		'no-tabs': 'off',
 		'no-undef': 'off',
